@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charchil Raj | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/image.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="splash-screen">
+        <div class="splash-content">
+            <div class="logo-container">
+                <span class="logo-text">CR</span>
+                <svg class="logo-circle" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" />
+                </svg>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-dot-outline"></div>
+    <div id="particles-js"></div>
+    
+    <header class="glass-nav">
+        <nav>
+            <div class="logo">CR</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()" checked>
+                <label for="dark_toggler" class="toggle-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </label>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="assets/charchilimage.jpg" alt="Charchil Raj" class="profile-image">
+                </div>
+                <div class="hero-text">
+                    
+                    <h1>Hi 👋, I'm <span class="neon-text">Charchil Raj</span></h1>
+                    <h2 class="dynamic-text">
+                        I am  <span class="typed-text"></span>
+                        <span class="title-badge"><i class="fab fa-android"></i> Android Developer</span>
+                      </h2>
+                      
+                    <p class="hero-description">Passionate Android Developer crafting innovative mobile experiences with Kotlin and modern Android technologies. Specialized in creating user-centric applications with clean architecture and material design principles.</p>
+                    <div class="tech-badges">
+                        <span class="tech-badge"><i class="fab fa-android"></i> Android</span>
+                        <span class="tech-badge"><i class="fas fa-code"></i> Kotlin</span>
+                        <span class="tech-badge"><i class="fas fa-mobile-alt"></i> Jetpack Compose</span>
+                        
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="assets/CV_Charchil_Raj.pdf" download class="download-cv">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                        <a href="#contact" class="contact-btn">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Rajcharchil" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/charchilraj/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:rajcharchil555@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+919430874685" class="social-icon">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="glass-card">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-intro">
+                        <p class="intro-text">Hello! I am <span class="highlight">Charchil Raj</span>, currently pursuing my Bachelor's degree in Computer Science from Lovely Professional University (LPU). I am passionate about technology and software development, with a special focus on Android development, AI integration, and system automation.</p>
+                    </div>
+                    <div class="about-details">
+                        <div class="education">
+                            <h3>Education</h3>
+                            <p>B.Tech CSE, Lovely Professional University (2022 – Present)</p>
+                        </div>
+                        <div class="strengths">
+                            <h3>Strengths</h3>
+                            <ul>
+                                <li>Resilience</li>
+                                <li>Rapid Learning</li>
+                                <li>Creative Problem Solver</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="glass-card">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span><i class="fab fa-java"></i> Java</span>
+                            <span><i class="fas fa-code"></i> Kotlin</span>
+                            <span><i class="fas fa-copyright"></i> C++</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks</h3>
+                        <div class="skill-tags">
+                            <span><i class="fas fa-mobile-alt"></i> Jetpack Compose</span>
+                            <span><i class="fas fa-robot"></i> Appium</span>
+                            <span><i class="fas fa-spider"></i> Selenium WebDriver</span>
+                            <span><i class="fas fa-vial"></i> jUnit</span>
+                            <span><i class="fas fa-plug"></i> RestAssured</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Development</h3>
+                        <div class="skill-tags">
+                            <span><i class="fab fa-android"></i> Android (Native-Kotlin)</span>
+                            <span><i class="fab fa-html5"></i> HTML</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <div class="skill-tags">
+                            <span><i class="fab fa-git-alt"></i> Git</span>
+                            <span><i class="fas fa-code"></i> Android Studio</span>
+                            <span><i class="fas fa-paper-plane"></i> Postman</span>
+                            <span><i class="fas fa-code"></i> VSCode</span>
+                            <span><i class="fab fa-github"></i> Github</span>
+                            <span><i class="fas fa-cubes"></i> Jetpack Components</span>
+                            <span><i class="fas fa-fire"></i> Firebase</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <div class="skill-tags">
+                            <span><i class="fas fa-shield-alt"></i> Resilience</span>
+                            <span><i class="fas fa-brain"></i> Perseverance</span>
+                            <span><i class="fas fa-bolt"></i> Rapid Skill Acquisition</span>
+                            <span><i class="fas fa-lightbulb"></i> Inquisitive Thinker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>ChatNova – AI-Powered Chatbot App</h3>
+                        <div class="tech-stack">
+                            <span>Kotlin</span>
+                            <span>Android</span>
+                            <span>Firebase</span>
+                            <span>Gemini API</span>
+                            <span>Retrofit</span>
+                            <span>Lottie</span>
+                        </div>
+                        <ul>
+                            <li>Developed a real-time AI chatbot with Gemini API integration</li>
+                            <li>Implemented offline mode and Firebase authentication for secure access</li>
+                            <li>Integrated dynamic Lottie animations for enhanced user experience</li>
+                            <li>Built with Retrofit for efficient API calls and RecyclerView for interactive chat UI</li>
+                            <li>Focused on clean UI design and optimized performance</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Rajcharchil/Chat-Nova" 
+   target="_blank" class="project-link">
+   <i class="fab fa-github"></i> View on GitHub
+</a>
+
+<a href="https://github.com/Rajcharchil/Chat-Nova/releases/download/v1.0/app-debug.apk" 
+   target="_blank" class="project-link">
+   <i class="fas fa-download"></i> Download APK
+</a>
+
+                            
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/chatnova image.jpg" alt="ChatNova Project">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>SYNTAX-ERROR – Web Coding Platform</h3>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <ul>
+                            <li>Designed and developed a web-based coding practice platform</li>
+                            <li>Implemented real-time code feedback system for instant evaluation</li>
+                            <li>Created responsive layouts supporting multiple screen sizes</li>
+                            <li>Developed structured coding challenges to enhance problem-solving skills</li>
+                            <li>Optimized for cross-browser compatibility and performance</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Rajcharchil/syntaxerror-challenges" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                            <a href="https://rajcharchil.github.io/syntaxerror-challenges/" 
+   target="_blank" class="project-link">
+   <i class="fas fa-external-link-alt"></i> Live Demo
+</a>
+
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/syntaxerrorimage.png" alt="SYNTAX-ERROR Project">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Automated UI Testing for E-Commerce App</h3>
+                        <div class="tech-stack">
+                            <span>Appium</span>
+                            <span>jUnit</span>
+                            <span>GitHub Actions</span>
+                            <span>XPath</span>
+                        </div>
+                        <ul>
+                            <li>Developed 25+ automated test cases covering major app flows</li>
+                            <li>Achieved 95% test coverage for critical features</li>
+                            <li>Implemented robust element locators using XPath and resource-id</li>
+                            <li>Reduced test execution time from 2 hours to 15 minutes through CI/CD</li>
+                            <li>Integrated with GitHub Actions for automated testing pipeline</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Documentation
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/Mobile-App-UI-Testing.jpg" alt="Automation Testing Project">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="achievements">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card glass-card">
+                    <div class="achievement-header">
+                        <h3>AI-Powered Early Disease Detection</h3>
+                        <span class="achievement-badge">2nd Runner-Up</span>
+                    </div>
+                    
+                    <p class="tech-stack">
+                        <i class="fab fa-python"></i> TensorFlow
+                        <i class="fas fa-camera"></i> OpenCV
+                        <i class="fas fa-stream"></i> Streamlit
+                        <i class="fas fa-brain"></i> Medical Imaging
+                    </p>
+                    <div class="achievement-content">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Developed an innovative AI model for disease detection from medical images</li>
+                            <li><i class="fas fa-check-circle"></i> Achieved 95% prediction accuracy in medical image analysis</li>
+                            <li><i class="fas fa-check-circle"></i> Built and deployed real-time prediction system using Streamlit</li>
+                            <li><i class="fas fa-check-circle"></i> Secured 2nd Runner-Up position in 24-hour hackathon</li>
+                            <li><i class="fas fa-check-circle"></i> Recognized for innovative solution in medical AI domain</li>
+                        </ul>
+                        <div class="achievement-links">
+                            <a href="https://github.com/Rajcharchil/HackAI_Hackathon" target="_blank" class="achievement-btn github-btn">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                            <a href="https://certificate.givemycertificate.com/c/9a29bd93-0aaf-416d-9b0b-b3f67687194c" target="_blank" class="achievement-btn cert-btn">
+                                <i class="fas fa-certificate"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="certifications">
+            <div class="glass-card">
+                <h2 class="section-title">Certifications</h2>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <span class="cert-badge">Featured</span>
+                        <div class="cert-image-container">
+                            <img src="assets/javaApplication.jpg" alt="Java Certification" class="cert-thumbnail" onclick="openModal(this.src)">
+                            <div class="cert-overlay">
+                                <i class="fas fa-search-plus" data-tooltip="View Certificate"></i>
+                                <button class="download-cert-btn" onclick="downloadCertificate('assets/javaApplication.jpg', 'Java_Application_Development_Certificate')" data-tooltip="Download Certificate">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3>Java Application Development Certification</h3>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Issued July 2024</p>
+                        <ul>
+                            <li>50-hour intensive training in Application Development using JAVA</li>
+                            <li>Mastered core Java concepts and best practices</li>
+                            <li>Developed real-world applications during training</li>
+                            <li>Achieved excellence in practical assessments</li>
+                        </ul>
+                    </div>
+
+                    <div class="cert-card">
+                        <span class="cert-badge">Advanced</span>
+                        <div class="cert-image-container">
+                            <img src="assets/c++.png" alt="DSA Certification" class="cert-thumbnail" onclick="openModal(this.src)">
+                            <div class="cert-overlay">
+                                <i class="fas fa-search-plus" data-tooltip="View Certificate"></i>
+                                <button class="download-cert-btn" onclick="downloadCertificate('assets/c++.png', 'DSA_CPP_Certificate')" data-tooltip="Download Certificate">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3>Mastering Data Structures & Algorithms using C++</h3>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Udemy | Feb 2024</p>
+                        <ul>
+                            <li>Completed 58.5 hours of intensive algorithm training</li>
+                            <li>Mastered advanced data structures implementation</li>
+                            <li>Developed efficient problem-solving techniques</li>
+                            <li>Achieved top performance in course assessments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Modal -->
+        <div id="imageModal" class="modal">
+            <div class="modal-content">
+                <img id="modalImage" src="" alt="Certificate">
+                <button class="modal-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <section id="education" class="education">
+            <div class="glass-card">
+                <h2 class="section-title">Education</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="edu-header">
+                            <h3>Lovely Professional University</h3>
+                            <span class="location">Punjab, India</span>
+                        </div>
+                        <p class="degree">B.Tech (Computer Science and Engineering)</p>
+                        <p class="grade">CGPA - 6.1</p>
+                        <p class="duration">Since 2022</p>
+                    </div>
+                    <div class="education-card">
+                        <div class="edu-header">
+                            <h3>Holy Cross Public School</h3>
+                            <span class="location">Muzaffarpur, Bihar</span>
+                        </div>
+                        <p class="degree">12th with Science</p>
+                        <p class="grade">Percentage: 69%</p>
+                        <p class="duration">May 2019 - March 2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="glass-card">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>rajcharchil555@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+91 9430874685</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/Rajcharchil" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/charchilraj/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <p>&copy; 2025 Charchil Raj. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
