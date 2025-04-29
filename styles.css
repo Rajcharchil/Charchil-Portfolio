@@ -1123,16 +1123,55 @@ section {
     line-height: 1.6;
 }
 
+.strengths {
+    background: url('assets/strength.jpg') center/cover no-repeat;
+    padding: 2.5rem;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.strengths::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.strengths h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
 .strengths ul {
     list-style: none;
     padding: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .strengths li {
-    color: var(--text-color);
-    margin-bottom: 0.8rem;
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
     padding-left: 1.5rem;
     position: relative;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
 }
 
 .strengths li::before {
@@ -1140,19 +1179,26 @@ section {
     position: absolute;
     left: 0;
     color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+.strengths:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
-    .about {
-        padding: 6rem 1rem;
+    .strengths {
+        padding: 2rem;
+        min-height: 180px;
     }
     
-    .intro-text {
-        font-size: 1.1rem;
+    .strengths h3 {
+        font-size: 1.8rem;
     }
     
-    .about-details {
-        grid-template-columns: 1fr;
+    .strengths li {
+        font-size: 1.2rem;
     }
 }
 
@@ -1353,99 +1399,168 @@ section {
 
 /* Education Section */
 .education {
-    padding: 5rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.education-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.education-card {
-    background: var(--glass-bg);
-    padding: 2rem;
+    background: url('assets/lovely.jpg') center/cover no-repeat;
+    padding: 2.5rem;
     border-radius: 15px;
-    border: 1px solid var(--glass-border);
+    position: relative;
+    overflow: hidden;
     transition: transform 0.3s ease;
-}
-
-.education-card:hover {
-    transform: translateY(-5px);
-}
-
-.edu-header {
+    min-height: 200px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1.5rem;
 }
 
-.edu-header h3 {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+.education::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
-.location {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-}
-
-.degree {
-    color: var(--text-color);
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-.grade {
-    color: var(--primary-color);
+.education h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-top: 0;
 }
 
-.duration {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
+.education p {
+    color: #ffffff;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.education:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .education {
+        padding: 1.5rem;
+        min-height: 180px;
+        padding-top: 1rem;
+    }
+    
+    .education h3 {
+        font-size: 1.8rem;
+    }
+    
+    .education p {
+        font-size: 1.2rem;
+    }
 }
 
 /* Certifications Section */
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    padding: 2rem;
 }
 
 .cert-card {
     background: var(--glass-bg);
-    padding: 2rem;
     border-radius: 15px;
+    padding: 2rem;
     border: 1px solid var(--glass-border);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .cert-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+.cert-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.cert-image-container {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cert-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover .cert-thumbnail {
+    transform: scale(1.05);
+}
+
+.cert-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.cert-card:hover .cert-overlay {
+    opacity: 1;
 }
 
 .cert-card h3 {
     color: var(--primary-color);
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    line-height: 1.4;
 }
 
 .cert-date {
     color: var(--text-secondary);
     font-size: 0.9rem;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .cert-card ul {
     list-style: none;
-    margin: 1rem 0;
+    padding: 0;
 }
 
 .cert-card li {
@@ -1453,6 +1568,8 @@ section {
     margin-bottom: 0.8rem;
     padding-left: 1.5rem;
     position: relative;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .cert-card li::before {
@@ -1462,80 +1579,25 @@ section {
     color: var(--primary-color);
 }
 
-.cert-link {
-    display: inline-block;
-    color: var(--primary-color);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--primary-color);
-    border-radius: 20px;
-    margin-top: 1rem;
-    transition: all 0.3s ease;
-}
-
-.cert-link:hover {
-    background: var(--primary-color);
-    color: var(--background-color);
-    transform: translateY(-3px);
-}
-
-.cta-buttons {
-    margin-top: 2rem;
-}
-
-.download-cv {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem 2rem;
-    background: var(--glass-bg);
-    border: 2px solid var(--primary-color);
-    border-radius: 30px;
-    color: var(--primary-color);
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.download-cv::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--primary-color);
-    transition: width 0.3s ease;
-    z-index: -1;
-}
-
-.download-cv:hover {
-    color: var(--background-color);
-    transform: translateY(-3px);
-    box-shadow: 0 0 20px var(--primary-color);
-}
-
-.download-cv:hover::before {
-    width: 100%;
-}
-
-.download-cv i {
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-}
-
-.download-cv:hover i {
-    transform: translateY(-2px);
+@media (max-width: 1200px) {
+    .cert-grid {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
-    .download-cv {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
+    .cert-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .cert-card {
+        padding: 1.5rem;
+    }
+    
+    .cert-image-container {
+        height: 180px;
     }
 }
 
@@ -1543,55 +1605,71 @@ section {
 .theme-toggle {
     position: relative;
     margin-right: 2rem;
+    display: flex;
+    align-items: center;
 }
 
 .dark_toggler {
     opacity: 0;
     position: absolute;
+    width: 0;
+    height: 0;
 }
 
 .toggle-label {
     cursor: pointer;
-    padding: 0.5rem;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 65px;
-    height: 32px;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
     background: var(--glass-bg);
-    border-radius: 50px;
+    border-radius: 20px;
     border: 1px solid var(--glass-border);
     transition: all 0.3s ease;
-    padding: 0 10px;
+    overflow: hidden;
 }
 
-.toggle-label i {
-    font-size: 1.1rem;
+.toggle-label .icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
     transition: all 0.3s ease;
-    z-index: 1;
 }
 
-.fa-sun {
-    color: #f39c12;
+.toggle-label .moon-icon {
+    left: 10px;
+    opacity: 1;
 }
 
-.fa-moon {
-    color: #f1c40f;
+.toggle-label .sun-icon {
+    right: 10px;
+    opacity: 0;
 }
 
 .dark_toggler:checked + .toggle-label {
     background: var(--glass-bg);
 }
 
-.dark_toggler:checked + .toggle-label i.fa-sun {
+.dark_toggler:checked + .toggle-label .moon-icon {
     opacity: 0;
-    transform: translateX(-15px);
+    transform: translateX(-20px);
 }
 
-.dark_toggler:not(:checked) + .toggle-label i.fa-moon {
+.dark_toggler:checked + .toggle-label .sun-icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.dark_toggler:not(:checked) + .toggle-label .moon-icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.dark_toggler:not(:checked) + .toggle-label .sun-icon {
     opacity: 0;
-    transform: translateX(15px);
+    transform: translateX(20px);
 }
 
 @media (max-width: 768px) {
@@ -1600,8 +1678,21 @@ section {
     }
     
     .toggle-label {
-        width: 60px;
-        height: 30px;
+        width: 70px;
+        height: 35px;
+    }
+    
+    .toggle-label .icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .toggle-label .moon-icon {
+        left: 8px;
+    }
+    
+    .toggle-label .sun-icon {
+        right: 8px;
     }
 }
 

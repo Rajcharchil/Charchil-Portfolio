@@ -45,8 +45,9 @@
             <div class="theme-toggle">
                 <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()" checked>
                 <label for="dark_toggler" class="toggle-label">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
+                    <img src="assets/moon (1).png" alt="Moon Icon" class="icon moon-icon" />
+                    <img src="assets/sun (1).png" alt="Sun Icon" class="icon sun-icon" />
+
                 </label>
             </div>
             <div class="hamburger">
@@ -61,13 +62,13 @@
         <section id="home" class="hero">
             <div class="hero-content">
                 <div class="hero-image">
-                    <img src="assets/charchilimage.jpg" alt="Charchil Raj" class="profile-image">
+                    <img src="assets/resumeimage.jpg" alt="Charchil Raj" class="profile-image">
                 </div>
                 <div class="hero-text">
                     
                     <h1>Hi 👋, I'm <span class="neon-text">Charchil Raj</span></h1>
                     <h2 class="dynamic-text">
-                        I am  <span class="typed-text"></span>
+                        I am<span class="typed-text"></span>
                         <span class="title-badge"><i class="fab fa-android"></i> Android Developer</span>
                       </h2>
                       
@@ -372,6 +373,48 @@
                             <li>Achieved top performance in course assessments</li>
                         </ul>
                     </div>
+
+                    <div class="cert-card">
+                        <span class="cert-badge">Professional</span>
+                        <div class="cert-image-container">
+                            <img src="assets/lpucolab.png" alt="Object Oriented Programming Certificate" class="cert-thumbnail" onclick="openModal(this.src)">
+                            <div class="cert-overlay">
+                                <i class="fas fa-search-plus" data-tooltip="View Certificate"></i>
+                                <button class="download-cert-btn" onclick="downloadCertificate('assets/lpucolab.png', 'OOP_Certificate')" data-tooltip="Download Certificate">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3>Object Oriented Programming</h3>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> LPU | Nov 2023</p>
+                        <ul>
+                            <li>Completed 72 hours of intensive OOP training</li>
+                            <li>Mastered object-oriented programming concepts</li>
+                            <li>Implemented practical projects on iamneo platform</li>
+                            <li>Duration: July 2023 - November 2023</li>
+                        </ul>
+                    </div>
+
+                    <div class="cert-card">
+                        <span class="cert-badge">Advanced</span>
+                        <div class="cert-image-container">
+                            <img src="assets/certificate2.png" alt="Software Engineering Certificate" class="cert-thumbnail" onclick="openModal(this.src)">
+                            <div class="cert-overlay">
+                                <i class="fas fa-search-plus" data-tooltip="View Certificate"></i>
+                                <button class="download-cert-btn" onclick="downloadCertificate('assets/certificate2.png', 'Software_Engineering_Certificate')" data-tooltip="Download Certificate">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3>Software Engineering: Implementation and Testing</h3>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> HKUST | Apr 2024</p>
+                        <ul>
+                            <li>Mastered software implementation methodologies</li>
+                            <li>Learned comprehensive testing strategies</li>
+                            <li>Implemented real-world testing scenarios</li>
+                            <li>Completed through Coursera platform</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -401,6 +444,7 @@
                     </div>
                     <div class="education-card">
                         <div class="edu-header">
+                            <h3>                               </h3>
                             <h3>Holy Cross Public School</h3>
                             <span class="location">Muzaffarpur, Bihar</span>
                         </div>
