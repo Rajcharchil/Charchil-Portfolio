@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rajcharchil.github.io/Charchil-Portfolio/sitemap.xml

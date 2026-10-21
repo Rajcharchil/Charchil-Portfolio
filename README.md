@@ -1,48 +1,47 @@
-# 🌟 Charchil Raj – Personal Portfolio Website
+# Charchil Raj – Portfolio
 
-![Charchil Portfolio Screenshot](https://github.com/user-attachments/assets/b82d7c05-7c73-4c5f-ac12-7c584b316566)
+Personal site for **Charchil Raj**, QA Automation Engineer. Plain HTML, CSS, and JavaScript — no build step, no animation libraries.
 
+**Live:** [charchilportfolio.netlify.app](https://charchilportfolio.netlify.app/)
 
-Welcome to my personal portfolio! This website showcases my work, projects, skills, and achievements in Android development, web development, and testing. Designed with a clean UI and responsive layout.
+## Stack
 
----
+- HTML5, CSS3, vanilla JavaScript
+- [Manrope](https://fonts.google.com/specimen/Manrope) via Google Fonts
+- Scroll motion via CSS custom properties (+ CSS scroll-driven animations where supported)
 
-## 🔥 Features
+## Sections
 
-- 🎨 Modern animated UI with smooth transitions
-- 💡 Responsive design across all devices
-- ⚙️ Built using HTML, CSS, JavaScript
-- 🌈 Gradient backgrounds and hover animations
-- 📱 Live demo and APK download links for projects
+- Hero (photo over name, parallax)
+- Selected work (project cards + detail dialog)
+- Service, Toolbox, Certifications
+- Experience + Education
+- Contact (mailto, LinkedIn, GitHub)
 
----
+## Projects on the site
 
-## 🚀 Technologies Used
+| Project | Links |
+|---------|--------|
+| Flipkart Web Automation | [GitHub](https://github.com/Rajcharchil/flipkart_Automation_Testing) |
+| API Testing (real-time communication) | — |
+| Chat Nova | [GitHub](https://github.com/Rajcharchil/Chat-Nova) · [APK](https://github.com/Rajcharchil/Chat-Nova/releases/download/v1.0/app-debug.apk) |
+| SYNTAX-ERROR | [GitHub](https://github.com/Rajcharchil/syntaxerror-challenges) · [Demo](https://rajcharchil.github.io/syntaxerror-challenges/) |
+| E-Commerce UI Testing (Appium) | — |
+| AI Early Disease Detection | [GitHub](https://github.com/Rajcharchil/HackAI_Hackathon) |
 
-- HTML5  
-- CSS3  
-- JavaScript  
-- Font Awesome  
-- AOS (Animate on Scroll)
+Edit content in `script.js` (`PROJECTS`, `SERVICES`, `EXPERIENCE`, `TOOLS`, `CERTS`, `EDU`).
 
----
-
-## 🧪 Projects Included
-
-- ✅ **ChatNova** – AI Chatbot using Kotlin, Firebase & Gemini API  
-- ✅ **SYNTAX-ERROR** – Web Coding Platform using HTML/CSS/JS  
-- ✅ **E-Commerce UI Testing** – Appium + jUnit  
-- ✅ **AI Disease Detection** – TensorFlow + Streamlit
-
----
-
-## 🔗 Live Demo
-
-👉 [View Portfolio Live](https://charchilportfolio.netlify.app/)
-
----
-
-## 📥 Clone or Download
+## Local preview
 
 ```bash
-git clone https://github.com/Rajcharchil/your-repo-name.git
+cd Charchil-Portfolio
+python3 -m http.server 8765
+```
+
+Open http://127.0.0.1:8765/
+
+## Clone
+
+```bash
+git clone https://github.com/Rajcharchil/Charchil-Portfolio.git
+```

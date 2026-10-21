@@ -1,0 +1,15 @@
+# OS / editor
+.DS_Store
+
+# Local agent tooling (not part of the website)
+.cursor/
+docs/
+
+# Local source files, kept on this machine only
+*.xlsx
+desktop_1.jpg
+mobile.jpg
+assets/Cloud Computing.pdf
+
+# Vercel link metadata
+.vercel
