@@ -1,0 +1,9 @@
+.git
+.cursor
+docs
+*.xlsx
+desktop_1.jpg
+mobile.jpg
+assets/Cloud Computing.pdf
+.DS_Store
+.env.local
